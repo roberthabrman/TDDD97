@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Our webpage</title>
+	<!--såhhär kan du kommentera, Fixar gjorda/!-->
+	<link href="/static/client.css" type="text/css" rel="stylesheet">
+	<script src="/static/client.js" type="text/javascript"></script>
+	<!--<script src="../../../serverstub.js" type="text/javascript"></script>!-->
+
+
+
+	<script id="profileview" type="text/html">
+		<div class="alloggedin" >
+
+
+
+
+			<ul class="tab">
+				<li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'home'),updatecontent()" id="defaultOpen"   >Home</a></li>
+				<li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'browse')">Browse</a></li>
+				<li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'account')">Account</a></li>
+
+
+			</ul>
+
+			<div id="home" class="tabcontent">
+
+				<form class="post" name="messagesposter" onsubmit="postmessage();return false">
+					Post Message:<br>
+					<input type="text" name="message" value="" required="" class="messageposterone">
+					<br><br>
+					<input type="submit" value="Post">
+                    <button type="button" class="refreshwallbutton" onclick="refreshwall();return false">Refreshwall</button>
+
+				</form>
+
+				
+
+
+
+
+
+
+				<div class="infotxt">First name:
+					<div id="firstname">Firstname</div><br>
+					Family name:
+					<div id="familyname">Familyname</div><br>
+					Gender:
+					<div id="gender">Gender</div><br>
+					City:
+					<div id="city">City</div><br>
+					Country:
+					<div id="country">Country</div><br>
+					Email:
+					<div id="email">Email</div><br>
+				</div>
+
+				<textarea class="wallone" id="wall" ondragover="refreshes(event)">
+
+				</textarea>
+
+
+
+
+
+
+
+
+			</div>
+
+
+
+
+
+
+			<div id="browse" class="tabcontent">
+
+
+
+				
+
+
+				<form class="formbrowse" name="searchinfobrowse" onsubmit="browseemailsearch();return false">
+					Search user with email:<br>
+					<input type="text" name="email" value="" required="">
+					<br><br>
+					<input type="submit" value="Search">
+
+				</form>
+
+
+
+
+
+
+
+				<form class="posttwo" name="messagespostertwo" onsubmit="postmessagetwo();return false">
+					Post Message:<br>
+					<input type="text" name="message" value="" required="">
+					<br><br>
+					<input type="submit" value="Post">
+				</form>
+
+				<button type="button" class="refreshwallbuttontwo" onclick="refreshwalltwo();return false">Refreshwall</button>
+
+				<textarea class="walltwo" id="walltwo">
+
+				</textarea>
+
+
+
+
+				<div id="errorbrowsesearch"></div>
+
+				
+				<div class="infotxttwo">
+					First name:
+					<div id="firstnametwo">Firstname</div><br>
+					Family name:
+					<div id="familynametwo">Familyname</div><br>
+					Gender:
+					<div id="gendertwo">Gender</div><br>
+					City:
+					<div id="citytwo">City</div><br>
+					Country:
+					<div id="countrytwo">Country</div><br>
+					Email:
+					<div id="emailtwo">Email</div><br>
+				</div>
+
+
+			</div>
+
+
+
+			<div id="account" class="tabcontent">
+				<h3>Account</h3>
+
+				<form name=passwordchange onsubmit="changepass();return false">
+					Old password:<br>
+					<input type="password" name="oldpassword" required=""><br>
+					New password:<br>
+					<input type="password" name="newpassword" required=""><br>
+
+					<input  class="submitbutton1" type="submit" value="Submit"><br>
+				</form>
+
+
+				<div id="changepassinfo"></div><br>
+				<button onclick="signout()">Signout</button>
+
+			</div>
+
+
+		</div>
+
+
+	</script>
+	<script id="welcomeview" type="text/html">
+
+
+
+
+		<div class="alla" >
+
+
+			<img src="/static/wimage.png" class="bild">
+
+
+
+
+			<div class="formerna">
+
+
+				<div class="form1">
+					<form name=formone class="inputfield" onsubmit="validateformone();return false;">
+						<br>
+
+						<div class="infotext">Email</div>
+						<input type="email" name="email" value="" required><br>
+						<div class="spaces"></div>
+
+						<div class="infotext">Password</div>
+						<input type="password" name="password" value="" required><br>
+						<div class="spaces"></div>
+						<div id="loginmessage" class="logininfo"></div>
+
+						<input  class="submitbutton1" type="submit" value="Submit"><br>
+
+					</form>
+
+
+
+				</div>
+				<br>
+
+
+				<div class="form2">
+					<div class="signtext"> SIGN UP HERE 
+					</div>
+					<form name="formtwo" class="inputfield" onsubmit="validateformtwo();return false;">
+
+						<div class="infotexttwo">First name</div>
+						<input type="text" name="firstname" value="" required><br>
+						<div class="spaces"></div>
+
+
+
+
+						<div class="infotexttwo"> Family name</div>
+						<input type="text" name="familyname" value="" required><br>
+						<div class="spaces"></div>
+
+						<div class="infotexttwo">Gender</div>
+						<select class="gendermenu" id="mygendermenu">
+							<option value="male">MALE</option>
+							<option value="female">FEMALE</option>
+						</select>
+						<div class="spaces"></div>
+
+						<div class="infotexttwo">City</div>
+						<input type="text" name="city" value="" required><br>
+						<div class="spaces"></div>
+
+						<div class="infotexttwo">Country</div>
+						<input type="text" name="country" value="" required><br>
+						<div class="spaces"></div>
+
+						<div class="infotexttwo">Email</div>
+						<input type="email" name="email" value="" required><br>
+						<div class="spaces"></div>
+
+						<div class="infotexttwo">Password</div>
+						<input type="password" name="password" value="" required><br>
+						<div class="spaces"></div>
+
+						<div class="infotexttwo">Repeat PSW</div>
+						<input type="password" name="passwordtwo" value="" required><br>
+						<div class="spaces"></div>
+
+
+						<input class="submitbutton2" type="submit" value="Submit">
+
+
+					</form>
+
+				</div>
+
+			</div>
+
+
+		</div>
+
+
+	</script>
+</head>
+
+<body>
+
+
+	
+	<div id="currentview"></div>
+
+
+</body>
+</html>

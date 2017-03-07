@@ -1,0 +1,105 @@
+body {
+    background-color: powderblue;
+}
+
+img
+{
+
+}
+
+#bild 
+{
+	margin-right: 10px;
+    float: left;
+    width: 340px;
+    height: 400px;
+}
+
+#formerna
+{
+  width: 250px;
+  height: 400px;
+  display: inline-block;
+
+
+}
+    
+#alla 
+{
+
+	margin-right: auto;
+margin-left: auto;
+width: 600px;
+height: 400px;
+margin-top: 100px;
+
+}
+
+
+.submitbutton1
+{
+	position: relative;
+  	left: 0px;
+    margin-top: 4px;
+    background-color: lightgrey;
+}
+.submitbutton2
+{
+  position: relative;
+    left: 0px;
+    margin-top: 7px;
+    background-color: lightgrey;
+}
+
+
+#signtext
+{
+	
+  	margin-left: 60px;
+    height: 36px;
+
+	font-weight: bold;
+}
+
+
+#form1
+{
+	background-color: white;
+  height: 100px;
+}
+
+#form2
+{
+  margin-top: -7px;
+
+	background-color: white;
+  height: 289px;
+}
+
+
+#inputfield
+{
+    text-align: right;
+
+    /*margin-left: 42px;*/
+    margin-bottom: 4px;
+}
+
+
+#infotext
+{
+  float: left;
+}
+
+
+#spaces
+{
+  margin-bottom: 9px;
+}
+
+#gendermenu
+{
+  width: 130px;
+  background-color: lightgrey;
+}
+
