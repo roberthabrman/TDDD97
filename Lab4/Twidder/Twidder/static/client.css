@@ -1,0 +1,253 @@
+body {
+  background-color: powderblue;
+}
+
+
+
+
+
+.bild 
+{
+	margin-right: 10px;
+  float: left;
+  width: 340px;
+  height: 400px;
+}
+
+.formerna
+{
+  width: 250px;
+  height: 400px;
+  display: inline-block;
+
+
+}
+
+
+
+
+
+.submitbutton1
+{
+	position: relative;
+ left: 0px;
+
+ background-color: lightgrey;
+}
+.submitbutton2
+{
+  position: relative;
+  left: 0px;
+  bottom: 5px;
+  background-color: lightgrey;
+}
+
+
+.signtext
+{
+ margin-left: 60px;
+ height: 36px;
+
+ font-weight: bold;
+}
+
+
+.form1
+{
+	background-color: white;
+  height: 100px;
+}
+
+.form2
+{
+  margin-top: -7px;
+  background-color: white;
+  height: 289px;
+}
+
+
+.inputfield
+{
+  text-align: right;
+  margin-bottom: 4px;
+}
+
+
+.infotext
+{
+  float: left;
+     font-size: 13px;
+
+}
+.infotexttwo
+{
+  float: left;
+    font-size: 13px;
+}
+
+
+
+
+.spaces
+{
+  margin-bottom: 9px;
+}
+
+.gendermenu
+{
+  width: 130px;
+  background-color: lightgrey;
+}
+
+
+
+.post
+{
+  float: right;
+}
+.posttwo
+{
+  float: right;
+}
+
+.formbrowse
+{
+
+  float: left;
+  width: 200px;
+}
+
+
+.infotxt
+{
+  float: left;
+    bottom: 100px;
+}
+
+
+
+
+
+.infotxttwo
+{
+  float: left;
+  font-size: 12px;
+}
+
+.logininfo
+{
+  float:left;
+  bottom: 20px;
+  font-size: 13px;
+}
+
+
+.walltwo {
+   resize: none;
+   float: right;
+   width: 450px;
+   height: 230px;
+   margin-top: 15px;
+}
+
+.wallone {
+   resize: none;
+   float: right;
+   width: 450px;
+   height: 230px;
+
+
+}
+
+.refreshwallbutton
+{
+float:right;
+    float:bottom;
+}
+
+.refreshwallbuttontwo
+{
+  float: right;
+  top: 70px;
+  right: 185px;
+  position: relative;
+}
+
+
+
+
+
+ul.tab {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+
+ul.tab li {float: left;}
+
+
+
+ul.tab li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 25px;
+}
+
+
+ul.tab li a:hover {background-color: #ddd;}
+
+
+ul.tab li a:focus, .active {background-color: #ccc;}
+
+
+
+
+
+
+.tabcontent {
+    display: none;
+    border-top: none;
+}
+
+
+
+
+
+
+.alla
+{
+
+	margin-right: auto;
+  margin-left: auto;
+  width: 600px;
+  height: 400px;
+  margin-top: 100px;
+  border: 1px solid #ccc;
+
+}
+
+.alloggedin
+{
+    margin-right: auto;
+  margin-left: auto;
+  width: 600px;
+  height: 500px;
+  margin-top: 100px;
+  border: 1px solid #000;
+
+}
+
+
+.messageposterone
+{
+    width: 447px;
+}
+
